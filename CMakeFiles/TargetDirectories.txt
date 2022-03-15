@@ -1,0 +1,8 @@
+/home/runner/src/embind11/bld/CMakeFiles/embind11.dir
+/home/runner/src/embind11/bld/CMakeFiles/embed.dir
+/home/runner/src/embind11/bld/CMakeFiles/edit_cache.dir
+/home/runner/src/embind11/bld/CMakeFiles/rebuild_cache.dir
+/home/runner/src/embind11/bld/CMakeFiles/list_install_components.dir
+/home/runner/src/embind11/bld/CMakeFiles/install.dir
+/home/runner/src/embind11/bld/CMakeFiles/install/local.dir
+/home/runner/src/embind11/bld/CMakeFiles/install/strip.dir

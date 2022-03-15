@@ -1,0 +1,64 @@
+Performing C++ SOURCE FILE Test HAS_FLTO failed with the following output:
+Change Dir: /home/runner/src/embind11/bld/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_a6e76/fast && /usr/bin/make  -f CMakeFiles/cmTC_a6e76.dir/build.make CMakeFiles/cmTC_a6e76.dir/build
+make[1]: Entering directory '/home/runner/src/embind11/bld/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_a6e76.dir/src.cxx.o
+/home/runner/src/emsdk/upstream/emscripten/em++ -DHAS_FLTO  --bind   -std=c++17 -fPIC -s DISABLE_EXCEPTION_THROWING=0 -s DISABLE_EXCEPTION_CATCHING=0  -s NO_DISABLE_EXCEPTION_CATCHING -fexceptions -s ALLOW_MEMORY_GROWTH=1  -WASM=1 -s FORCE_FILESYSTEM=1 -s MODULARIZE -s ERROR_ON_UNDEFINED_SYMBOLS=1 -s EXPORT_NAME="createModule" -s EXPORT_ES6=0 -s USE_ES6_IMPORT_META=0 -s ERROR_ON_UNDEFINED_SYMBOLS=1    -flto -MD -MT CMakeFiles/cmTC_a6e76.dir/src.cxx.o -MF CMakeFiles/cmTC_a6e76.dir/src.cxx.o.d -o CMakeFiles/cmTC_a6e76.dir/src.cxx.o -c /home/runner/src/embind11/bld/CMakeFiles/CMakeTmp/src.cxx
+em++: warning: linker setting ignored during compilation: 'NO_DISABLE_EXCEPTION_CATCHING' [-Wunused-command-line-argument]
+em++: warning: linker setting ignored during compilation: 'ALLOW_MEMORY_GROWTH' [-Wunused-command-line-argument]
+em++: warning: linker setting ignored during compilation: 'FORCE_FILESYSTEM' [-Wunused-command-line-argument]
+em++: warning: linker setting ignored during compilation: 'MODULARIZE' [-Wunused-command-line-argument]
+em++: warning: linker setting ignored during compilation: 'ERROR_ON_UNDEFINED_SYMBOLS' [-Wunused-command-line-argument]
+em++: warning: linker setting ignored during compilation: 'EXPORT_NAME' [-Wunused-command-line-argument]
+em++: warning: linker setting ignored during compilation: 'EXPORT_ES6' [-Wunused-command-line-argument]
+em++: warning: linker setting ignored during compilation: 'USE_ES6_IMPORT_META' [-Wunused-command-line-argument]
+em++: warning: linker flag ignored during compilation: '--bind' [-Wunused-command-line-argument]
+warning: unknown warning option '-WASM=1' [-Wunknown-warning-option]
+1 warning generated.
+Linking CXX executable cmTC_a6e76.js
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a6e76.dir/link.txt --verbose=1
+/home/runner/src/emsdk/upstream/emscripten/em++   --bind   -std=c++17 -fPIC -s DISABLE_EXCEPTION_THROWING=0 -s DISABLE_EXCEPTION_CATCHING=0  -s NO_DISABLE_EXCEPTION_CATCHING -fexceptions -s ALLOW_MEMORY_GROWTH=1  -WASM=1 -s FORCE_FILESYSTEM=1 -s MODULARIZE -s ERROR_ON_UNDEFINED_SYMBOLS=1 -s EXPORT_NAME="createModule" -s EXPORT_ES6=0 -s USE_ES6_IMPORT_META=0 -s ERROR_ON_UNDEFINED_SYMBOLS=1  @CMakeFiles/cmTC_a6e76.dir/objects1.rsp -o cmTC_a6e76.js @CMakeFiles/cmTC_a6e76.dir/linklibs.rsp
+cache:INFO: generating system library: sysroot/lib/wasm32-emscripten/lto/libembind-rtti.a... (this will be cached in "/home/runner/src/emsdk/upstream/emscripten/cache/sysroot/lib/wasm32-emscripten/lto/libembind-rtti.a" for subsequent builds)
+cache:INFO:  - ok
+cache:INFO: generating system library: sysroot/lib/wasm32-emscripten/lto/libc++.a... (this will be cached in "/home/runner/src/emsdk/upstream/emscripten/cache/sysroot/lib/wasm32-emscripten/lto/libc++.a" for subsequent builds)
+cache:INFO:  - ok
+cache:INFO: generating system library: sysroot/lib/wasm32-emscripten/lto/libc++abi.a... (this will be cached in "/home/runner/src/emsdk/upstream/emscripten/cache/sysroot/lib/wasm32-emscripten/lto/libc++abi.a" for subsequent builds)
+cache:INFO:  - ok
+make[1]: Leaving directory '/home/runner/src/embind11/bld/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test HAS_FLTO_THIN failed with the following output:
+Change Dir: /home/runner/src/embind11/bld/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_12b2f/fast && /usr/bin/make  -f CMakeFiles/cmTC_12b2f.dir/build.make CMakeFiles/cmTC_12b2f.dir/build
+make[1]: Entering directory '/home/runner/src/embind11/bld/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_12b2f.dir/src.cxx.o
+/home/runner/src/emsdk/upstream/emscripten/em++ -DHAS_FLTO_THIN  --bind   -std=c++17 -fPIC -s DISABLE_EXCEPTION_THROWING=0 -s DISABLE_EXCEPTION_CATCHING=0  -s NO_DISABLE_EXCEPTION_CATCHING -fexceptions -s ALLOW_MEMORY_GROWTH=1  -WASM=1 -s FORCE_FILESYSTEM=1 -s MODULARIZE -s ERROR_ON_UNDEFINED_SYMBOLS=1 -s EXPORT_NAME="createModule" -s EXPORT_ES6=0 -s USE_ES6_IMPORT_META=0 -s ERROR_ON_UNDEFINED_SYMBOLS=1    -flto=thin -MD -MT CMakeFiles/cmTC_12b2f.dir/src.cxx.o -MF CMakeFiles/cmTC_12b2f.dir/src.cxx.o.d -o CMakeFiles/cmTC_12b2f.dir/src.cxx.o -c /home/runner/src/embind11/bld/CMakeFiles/CMakeTmp/src.cxx
+em++: warning: linker setting ignored during compilation: 'NO_DISABLE_EXCEPTION_CATCHING' [-Wunused-command-line-argument]
+em++: warning: linker setting ignored during compilation: 'ALLOW_MEMORY_GROWTH' [-Wunused-command-line-argument]
+em++: warning: linker setting ignored during compilation: 'FORCE_FILESYSTEM' [-Wunused-command-line-argument]
+em++: warning: linker setting ignored during compilation: 'MODULARIZE' [-Wunused-command-line-argument]
+em++: warning: linker setting ignored during compilation: 'ERROR_ON_UNDEFINED_SYMBOLS' [-Wunused-command-line-argument]
+em++: warning: linker setting ignored during compilation: 'EXPORT_NAME' [-Wunused-command-line-argument]
+em++: warning: linker setting ignored during compilation: 'EXPORT_ES6' [-Wunused-command-line-argument]
+em++: warning: linker setting ignored during compilation: 'USE_ES6_IMPORT_META' [-Wunused-command-line-argument]
+em++: warning: linker flag ignored during compilation: '--bind' [-Wunused-command-line-argument]
+warning: unknown warning option '-WASM=1' [-Wunknown-warning-option]
+1 warning generated.
+Linking CXX executable cmTC_12b2f.js
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_12b2f.dir/link.txt --verbose=1
+/home/runner/src/emsdk/upstream/emscripten/em++   --bind   -std=c++17 -fPIC -s DISABLE_EXCEPTION_THROWING=0 -s DISABLE_EXCEPTION_CATCHING=0  -s NO_DISABLE_EXCEPTION_CATCHING -fexceptions -s ALLOW_MEMORY_GROWTH=1  -WASM=1 -s FORCE_FILESYSTEM=1 -s MODULARIZE -s ERROR_ON_UNDEFINED_SYMBOLS=1 -s EXPORT_NAME="createModule" -s EXPORT_ES6=0 -s USE_ES6_IMPORT_META=0 -s ERROR_ON_UNDEFINED_SYMBOLS=1  @CMakeFiles/cmTC_12b2f.dir/objects1.rsp -o cmTC_12b2f.js @CMakeFiles/cmTC_12b2f.dir/linklibs.rsp
+cache:INFO: generating system library: sysroot/lib/wasm32-emscripten/thinlto/libembind-rtti.a... (this will be cached in "/home/runner/src/emsdk/upstream/emscripten/cache/sysroot/lib/wasm32-emscripten/thinlto/libembind-rtti.a" for subsequent builds)
+cache:INFO:  - ok
+cache:INFO: generating system library: sysroot/lib/wasm32-emscripten/thinlto/libc++.a... (this will be cached in "/home/runner/src/emsdk/upstream/emscripten/cache/sysroot/lib/wasm32-emscripten/thinlto/libc++.a" for subsequent builds)
+cache:INFO:  - ok
+cache:INFO: generating system library: sysroot/lib/wasm32-emscripten/thinlto/libc++abi.a... (this will be cached in "/home/runner/src/emsdk/upstream/emscripten/cache/sysroot/lib/wasm32-emscripten/thinlto/libc++abi.a" for subsequent builds)
+cache:INFO:  - ok
+make[1]: Leaving directory '/home/runner/src/embind11/bld/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
