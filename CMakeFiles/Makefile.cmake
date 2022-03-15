@@ -17,7 +17,10 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.22.2/CMakeCCompiler.cmake"
   "CMakeFiles/3.22.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.22.2/CMakeSystem.cmake"
+  "../extern_pre.js"
   "../overwriteProp.cmake"
+  "../post.js"
+  "../pre.js"
   "../usage.html"
   "/home/runner/src/emsdk/upstream/emscripten/cmake/Modules/CMakeSystemSpecificInformation.cmake"
   "/home/runner/src/emsdk/upstream/emscripten/cmake/Modules/Platform/Emscripten.cmake"
@@ -66,6 +69,9 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/3.22.2/CMakeCCompiler.cmake"
   "CMakeFiles/3.22.2/CMakeCXXCompiler.cmake"
   "usage.html"
+  "pre.js"
+  "post.js"
+  "extern_pre.js"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
