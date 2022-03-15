@@ -87,13 +87,13 @@
         delay(1000).then(()=>{
           console.log("in delay then")
 
-          console.log("embind11 ..")
-          import('/embind11.js').then(datamodule => {
-            console.log("libs mounted")
-            console.log("Initializing interpreter")
+//           console.log("embind11 ..")
+//           import('/embind11.js').then(datamodule => {
+//             console.log("libs mounted")
+//             console.log("Initializing interpreter")
 
-            themodule.initialize_interpreter()
-          });
+//             themodule.initialize_interpreter()
+//           });
 
           let btn2 = document.createElement("button");
           btn2.innerHTML = "run-try-catch";
