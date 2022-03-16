@@ -1,14 +1,14 @@
 Performing C++ SOURCE FILE Test HAS_FLTO failed with the following output:
 Change Dir: /home/runner/src/embind11/bld/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_5f4ef/fast && /usr/bin/make  -f CMakeFiles/cmTC_5f4ef.dir/build.make CMakeFiles/cmTC_5f4ef.dir/build
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_3aa30/fast && /usr/bin/make  -f CMakeFiles/cmTC_3aa30.dir/build.make CMakeFiles/cmTC_3aa30.dir/build
 make[1]: Entering directory '/home/runner/src/embind11/bld/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_5f4ef.dir/src.cxx.o
-/home/runner/src/emsdk/upstream/emscripten/em++ -DHAS_FLTO  --bind   -std=c++17 -fPIC -s DISABLE_EXCEPTION_THROWING=0 -s DISABLE_EXCEPTION_CATCHING=0  -s NO_DISABLE_EXCEPTION_CATCHING -fexceptions -s ALLOW_MEMORY_GROWTH=1 --pre-js pre.js --post-js post.js --extern-pre-js extern_pre.js  -WASM=1 -s FORCE_FILESYSTEM=1 -s MODULARIZE -s ERROR_ON_UNDEFINED_SYMBOLS=1 -s EXPORT_NAME="createModule" -s EXPORT_ES6=0 -s USE_ES6_IMPORT_META=0 -s ERROR_ON_UNDEFINED_SYMBOLS=1    -flto -MD -MT CMakeFiles/cmTC_5f4ef.dir/src.cxx.o -MF CMakeFiles/cmTC_5f4ef.dir/src.cxx.o.d -o CMakeFiles/cmTC_5f4ef.dir/src.cxx.o -c /home/runner/src/embind11/bld/CMakeFiles/CMakeTmp/src.cxx
+Building CXX object CMakeFiles/cmTC_3aa30.dir/src.cxx.o
+/home/runner/src/emsdk/upstream/emscripten/em++ -DHAS_FLTO  --bind   -std=c++17 -fPIC -s DISABLE_EXCEPTION_THROWING=0 -s DISABLE_EXCEPTION_CATCHING=0  -s NO_DISABLE_EXCEPTION_CATCHING -fexceptions -s ALLOW_MEMORY_GROWTH=1 --pre-js pre.js --post-js post.js --extern-pre-js extern_pre.js  -WASM=1 -s FORCE_FILESYSTEM=1 -s MODULARIZE -s ERROR_ON_UNDEFINED_SYMBOLS=1 -s EXPORT_NAME="createModule" -s EXPORT_ES6=0 -s USE_ES6_IMPORT_META=0 -s ERROR_ON_UNDEFINED_SYMBOLS=1    -flto -MD -MT CMakeFiles/cmTC_3aa30.dir/src.cxx.o -MF CMakeFiles/cmTC_3aa30.dir/src.cxx.o.d -o CMakeFiles/cmTC_3aa30.dir/src.cxx.o -c /home/runner/src/embind11/bld/CMakeFiles/CMakeTmp/src.cxx
 em++: error: '--pre-js': file not found: 'pre.js'
-make[1]: *** [CMakeFiles/cmTC_5f4ef.dir/build.make:79: CMakeFiles/cmTC_5f4ef.dir/src.cxx.o] Error 1
+make[1]: *** [CMakeFiles/cmTC_3aa30.dir/build.make:79: CMakeFiles/cmTC_3aa30.dir/src.cxx.o] Error 1
 make[1]: Leaving directory '/home/runner/src/embind11/bld/CMakeFiles/CMakeTmp'
-make: *** [Makefile:127: cmTC_5f4ef/fast] Error 2
+make: *** [Makefile:127: cmTC_3aa30/fast] Error 2
 
 
 Source file was:
@@ -16,14 +16,14 @@ int main() { return 0; }
 Performing C++ SOURCE FILE Test HAS_FLTO_THIN failed with the following output:
 Change Dir: /home/runner/src/embind11/bld/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_42e20/fast && /usr/bin/make  -f CMakeFiles/cmTC_42e20.dir/build.make CMakeFiles/cmTC_42e20.dir/build
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_2842e/fast && /usr/bin/make  -f CMakeFiles/cmTC_2842e.dir/build.make CMakeFiles/cmTC_2842e.dir/build
 make[1]: Entering directory '/home/runner/src/embind11/bld/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_42e20.dir/src.cxx.o
-/home/runner/src/emsdk/upstream/emscripten/em++ -DHAS_FLTO_THIN  --bind   -std=c++17 -fPIC -s DISABLE_EXCEPTION_THROWING=0 -s DISABLE_EXCEPTION_CATCHING=0  -s NO_DISABLE_EXCEPTION_CATCHING -fexceptions -s ALLOW_MEMORY_GROWTH=1 --pre-js pre.js --post-js post.js --extern-pre-js extern_pre.js  -WASM=1 -s FORCE_FILESYSTEM=1 -s MODULARIZE -s ERROR_ON_UNDEFINED_SYMBOLS=1 -s EXPORT_NAME="createModule" -s EXPORT_ES6=0 -s USE_ES6_IMPORT_META=0 -s ERROR_ON_UNDEFINED_SYMBOLS=1    -flto=thin -MD -MT CMakeFiles/cmTC_42e20.dir/src.cxx.o -MF CMakeFiles/cmTC_42e20.dir/src.cxx.o.d -o CMakeFiles/cmTC_42e20.dir/src.cxx.o -c /home/runner/src/embind11/bld/CMakeFiles/CMakeTmp/src.cxx
+Building CXX object CMakeFiles/cmTC_2842e.dir/src.cxx.o
+/home/runner/src/emsdk/upstream/emscripten/em++ -DHAS_FLTO_THIN  --bind   -std=c++17 -fPIC -s DISABLE_EXCEPTION_THROWING=0 -s DISABLE_EXCEPTION_CATCHING=0  -s NO_DISABLE_EXCEPTION_CATCHING -fexceptions -s ALLOW_MEMORY_GROWTH=1 --pre-js pre.js --post-js post.js --extern-pre-js extern_pre.js  -WASM=1 -s FORCE_FILESYSTEM=1 -s MODULARIZE -s ERROR_ON_UNDEFINED_SYMBOLS=1 -s EXPORT_NAME="createModule" -s EXPORT_ES6=0 -s USE_ES6_IMPORT_META=0 -s ERROR_ON_UNDEFINED_SYMBOLS=1    -flto=thin -MD -MT CMakeFiles/cmTC_2842e.dir/src.cxx.o -MF CMakeFiles/cmTC_2842e.dir/src.cxx.o.d -o CMakeFiles/cmTC_2842e.dir/src.cxx.o -c /home/runner/src/embind11/bld/CMakeFiles/CMakeTmp/src.cxx
 em++: error: '--pre-js': file not found: 'pre.js'
-make[1]: *** [CMakeFiles/cmTC_42e20.dir/build.make:79: CMakeFiles/cmTC_42e20.dir/src.cxx.o] Error 1
+make[1]: *** [CMakeFiles/cmTC_2842e.dir/build.make:79: CMakeFiles/cmTC_2842e.dir/src.cxx.o] Error 1
 make[1]: Leaving directory '/home/runner/src/embind11/bld/CMakeFiles/CMakeTmp'
-make: *** [Makefile:127: cmTC_42e20/fast] Error 2
+make: *** [Makefile:127: cmTC_2842e/fast] Error 2
 
 
 Source file was:
