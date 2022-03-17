@@ -19,8 +19,8 @@
         // web worker
         PACKAGE_PATH = encodeURIComponent(location.pathname.toString().substring(0, location.pathname.toString().lastIndexOf('/')) + '/');
       }
-      var PACKAGE_NAME = 'embind11.data';
-      var REMOTE_PACKAGE_BASE = 'embind11.data';
+      var PACKAGE_NAME = 'embind11_side.so.data';
+      var REMOTE_PACKAGE_BASE = 'embind11_side.so.data';
       if (typeof Module['locateFilePackage'] === 'function' && !Module['locateFile']) {
         Module['locateFile'] = Module['locateFilePackage'];
         err('warning: you defined Module.locateFilePackage, that has been renamed to Module.locateFile (using your locateFilePackage for now)');
@@ -168,10 +168,10 @@ Module['FS_createPath']("/home/runner/micromamba/envs/emforgetest/lib/python3.11
           var files = metadata['files'];
           for (var i = 0; i < files.length; ++i) {
             DataRequest.prototype.requests[files[i].filename].onload();
-          }          Module['removeRunDependency']('datafile_embind11.data');
+          }          Module['removeRunDependency']('datafile_embind11_side.so.data');
 
       };
-      Module['addRunDependency']('datafile_embind11.data');
+      Module['addRunDependency']('datafile_embind11_side.so.data');
 
       if (!Module.preloadResults) Module.preloadResults = {};
 
@@ -192,6 +192,6 @@ Module['FS_createPath']("/home/runner/micromamba/envs/emforgetest/lib/python3.11
     }
 
     }
-    loadPackage({"files": [{"filename": "/home/runner/micromamba/envs/emforgetest/lib/python3.11/site-packages/embind11_side.so", "start": 0, "end": 758458}], "remote_package_size": 758458, "package_uuid": "ea996ce9-bf03-4aea-9f41-aaac15b9d486"});
+    loadPackage({"files": [{"filename": "/home/runner/micromamba/envs/emforgetest/lib/python3.11/site-packages/embind11_side.so", "start": 0, "end": 758458}], "remote_package_size": 758458, "package_uuid": "44286278-0d83-4aae-9e86-7028813eafac"});
 
   })();
