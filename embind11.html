@@ -27,6 +27,54 @@
     outputtext = document.myform.outputtext
     outputtext.value = ""
 
+
+
+    default_txt = "\
+import embind11 as ems\n\
+ems.js.eval('function fubar(){throw \"error in js\"}')\n\
+t  = ems.js.fubar\n\
+try:\n\
+     t()\n\
+except Exception as e:\n\
+   print('catched',str(e))\n\
+\n\
+# get the canvas\n\
+document = ems.js.document\n\
+getElementById = document.getElementById\n\
+\n\
+if True:\n\
+    canvas = ems.js.document.getElementById('mycanvas')\n\
+\n\
+    ctx = canvas.getContext('2d')\n\
+\n\
+    # bounding box / topleft\n\
+    boundings = canvas.getBoundingClientRect()\n\
+    top_left = boundings.left.pythonize(), boundings.top.pythonize()\n\
+\n\
+    # is the mouse down?\n\
+    is_down = [False]\n\
+\n\
+    def mouse_down(e):\n\
+        x = e.x.pythonize() - top_left[0]\n\
+        y = e.y.pythonize() - top_left[1]\n\
+        is_down[0] = True\n\
+        ctx.moveTo(x, y);\n\
+\n\
+    def mouse_move(e):\n\
+        if is_down[0]:\n\
+            x = e.x.pythonize() - top_left[0]\n\
+            y = e.y.pythonize() - top_left[1]\n\
+            ctx.lineTo(x, y);\n\
+            ctx.stroke();\n\
+\n\
+    def mouse_up(e):\n\
+        is_down[0] = False\n\
+        \n\
+    canvas['onmousedown'] = ems.js_callback(mouse_down)\n\
+    canvas['onmousemove'] = ems.js_callback(mouse_move)\n\
+    canvas['onmouseup'] = ems.js_callback(mouse_up)\n\
+    "
+
     var editor = CodeMirror.fromTextArea(document.myform.inputtext, {
       lineNumbers: true,
       mode: 'python',
@@ -59,7 +107,7 @@
 
 
     window.onload = () => {
-        var savedText = localStorage.getItem("text") || "";
+        var savedText = localStorage.getItem("text") || default_txt;
         editor.getDoc().setValue(savedText);
     };
 
@@ -68,7 +116,7 @@
       const promise = new Promise((r) => {
         Module.monitorRunDependencies = (n) => {
           if (n === 0) {
-            console.log("ALL ZERO")
+            console.log("all `RunDependencies` loaded")
             r();
           }
         };
@@ -93,6 +141,7 @@
 
       themodule.initialize_interpreter()
 
+      scope = themodule['main_scope']()
 
       let btn2 = document.createElement("button");
       btn2.innerHTML = "run-try-catch";
@@ -102,16 +151,7 @@
         localStorage.setItem("text", text)
 
         try{
-          t = themodule.exec_code(text)
-          console.log(t)
-
-          // console.log(Module)
-          // Module.ccall("exec_code", null, ['string'], [text], {async: true}).then(result => {
-          //   console.log("async exec d0ne");
-          // });
-
-
-
+          t = themodule.exec_code(text, scope)
         }
         catch (e) {
           console.log("ERROR CATCHED",e)
