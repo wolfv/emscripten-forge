@@ -192,6 +192,6 @@ Module['FS_createPath']("/home/runner/micromamba/envs/emforgetest/lib/python3.10
     }
 
     }
-    loadPackage({"files": [{"filename": "/home/runner/micromamba/envs/emforgetest/lib/python3.10/site-packages/embind11_side.so", "start": 0, "end": 944233}], "remote_package_size": 944233, "package_uuid": "60d4146c-02bc-480c-87ff-03ddf7748d30"});
+    loadPackage({"files": [{"filename": "/home/runner/micromamba/envs/emforgetest/lib/python3.10/site-packages/embind11_side.so", "start": 0, "end": 944233}], "remote_package_size": 944233, "package_uuid": "3edb2c69-0276-468e-8a7a-4dc66ca74d2d"});
 
   })();
